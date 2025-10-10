@@ -1,0 +1,8 @@
+# Python requirements for DiD replication
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+csdid
+doublediff

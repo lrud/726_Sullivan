@@ -1,0 +1,14 @@
+# Ignore everything except the DiD folder
+/*
+!DiD/
+
+# Ignore within DiD
+DiD/.ipynb_checkpoints/
+DiD/__pycache__/
+DiD/*.pyc
+DiD/.DS_Store
+DiD/.env
+DiD/.venv
+DiD/.mypy_cache
+DiD/.pytest_cache
+DiD/.vscode/
