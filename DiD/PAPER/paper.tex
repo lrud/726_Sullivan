@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{natbib}
+\usepackage{amsmath}
+
+
+\title{The Effect of Minimum Wage Increases on Teen Employment:\\ A Replication Study}
+\author{Author Name \\ Graduate Econometrics Class}
+\date{October 2025 \\
+Professor's Name \\
+Institution Name}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+This paper presents a replication of the study conducted by \citet{callaway2021difference} that investigates the causal impact of minimum wage increases on teen employment. Specifically, the original study examines how staggered state-level increases in the minimum wage influence teen employment outcomes at the county level over time. The primary research question is whether raising the minimum wage reduces employment opportunities for teenagers, which is of significant policy interest given ongoing debates over labor market regulations and vulnerable workers. This replication follows the original study’s difference-in-differences framework, which accounts for variation in treatment timing across states and potential heterogeneity in treatment effects. The replication code was converted almost line-by-line from the original Stata code into Python to ensure that the results match those presented in the paper exactly. By replicating the analysis with this high fidelity using detailed panel data from multiple years and counties, this paper aims to validate the robustness of the original findings regarding the employment consequences of minimum wage policies for the teenage workforce.
+\end{abstract}
+\newpage
+
+\section{Introduction}
+
+This paper evaluates the causal effect of minimum wage increases on teen employment. Specifically, the analysis investigates how state-level minimum wage increases, rolled out at different times between 2001 and 2007 following a significant exogenous federal minimum wage increase in 2004, influenced county-level teen employment rates. The 2004 federal policy raised the baseline minimum wage from \$5.15 to \$6.00, prompting variation in state responses with some states increasing their minimum wages earlier or later than others. This staggered timing of state-level increases creates a natural experiment that allows researchers to study the impact of minimum wage policy with greater rigor \citep{callaway2021difference}.
+
+The central research question is whether raising the minimum wage reduces employment opportunities for teenagers, who frequently occupy low-wage roles and are thus most likely to be impacted by such policy changes \citep{angrist2008mostly}.
+
+Minimum wage policy remains a central issue in economic and public debate due to its implications for income distribution, job availability, and labor market health \citep{callaway2021difference, angrist2008mostly}. Teen employment is of particular interest, as young workers typically hold jobs at or near the minimum wage. The results of this study are valuable because they employ a rigorous methodological approach, addressing the challenge of staggered policy adoption and improving the credibility of causal inference. This contributes important evidence for policymakers regarding the direct and indirect effects of minimum wage changes on vulnerable labor market groups. Moreover, the study recognizes that the effect of minimum wage increases may vary across groups and over time, making it essential to account for differences in treatment timing and heterogeneous impacts in drawing policy-relevant conclusions.
+
+\section{Identification Strategy and Primary Findings}
+
+The ideal randomized experiment to assess the impact of minimum wage increases on teen employment would randomly assign different states or counties to implement minimum wage hikes at varying points in time, unrelated to any other factors influencing employment. This random assignment would ensure that any observed differences in teen employment outcomes between treated and untreated areas were solely due to the policy change.
+
+In practice, such randomization is not possible. However, an exogenous federal minimum wage increase in 2004 raised the baseline wage from \$5.15 to \$6.00. States responded differently to this federal increase at different times, creating a natural quasi-experimental setting. This staggered timing of state-level minimum wage increases provides the variation used in the study’s Difference-in-Differences (DiD) approach \citep{callaway2021difference}.
+
+A key parameter estimated is the group-time average treatment effect, denoted as $\text{ATT}_{g,t}$. This measures the average effect of the policy on the group of units (counties) that first experienced the treatment in period $g$, observed at period $t$. For example, $\text{ATT}_{2005, 2007}$ measures the impact on counties that increased their minimum wage in 2005, observed two years later in 2007. Estimating treatment effects in this disaggregated manner allows the model to capture changes over time and treatment effect differences across groups \citep{callaway2021difference}.
+
+A critical assumption underpinning this causal inference is the parallel trends assumption. It states that in the absence of treatment, the outcome trends for treated and untreated groups would have followed the same trajectory over time. More concretely, this means that if minimum wage increases had not occurred, the difference in teen employment between counties that were eventually treated and those that were never treated would have remained constant. The validity of this assumption is paramount; if broken, other factors driving teen employment trends differently across groups would confound the estimated treatment effects. The paper strengthens this assumption by conditioning on observed covariates, which helps ensure treated and untreated groups are comparable in terms of their baseline characteristics \citep{angrist2008mostly, callaway2021difference}.
+
+The study finds that minimum wage increases generally reduce teen employment. Estimated treatment effects for several groups indicate statistically significant declines in teen employment ranging from approximately 2.3\% to 13.6\% relative to counterfactual levels without the policy. Aggregating these effects suggests that, on average, the minimum wage hikes lead to a 3.9\% to 5.2\% reduction in teen employment across treated counties \citep{callaway2021difference}.
+
+These negative effects also exhibit dynamics, growing larger several years after the minimum wage increase, indicating that the impact of the policy intensifies with longer exposure. Using doubly robust DiD estimators with simultaneous confidence bands, the study confirms the robustness of these results. Put simply, the significant coefficients imply that raising the minimum wage typically leads to a measurable decrease—a few percentage points—in teen employment compared to what would have happened without the policy changes \citep{callaway2021difference}.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
+
