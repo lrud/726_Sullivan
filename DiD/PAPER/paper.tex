@@ -8,10 +8,10 @@
 
 
 \title{The Effect of Minimum Wage Increases on Teen Employment:\\ A Replication Study}
-\author{Author Name \\ Graduate Econometrics Class}
+\author{Lukas Rueda \\ ECO 761: Policy and Program Evaluation}
 \date{October 2025 \\
-Professor's Name \\
-Institution Name}
+Professor Tara Sullivan \\
+Hunter College}
 
 \begin{document}
 
@@ -43,6 +43,23 @@ A critical assumption underpinning this causal inference is the parallel trends 
 The study finds that minimum wage increases generally reduce teen employment. Estimated treatment effects for several groups indicate statistically significant declines in teen employment ranging from approximately 2.3\% to 13.6\% relative to counterfactual levels without the policy. Aggregating these effects suggests that, on average, the minimum wage hikes lead to a 3.9\% to 5.2\% reduction in teen employment across treated counties \citep{callaway2021difference}.
 
 These negative effects also exhibit dynamics, growing larger several years after the minimum wage increase, indicating that the impact of the policy intensifies with longer exposure. Using doubly robust DiD estimators with simultaneous confidence bands, the study confirms the robustness of these results. Put simply, the significant coefficients imply that raising the minimum wage typically leads to a measurable decrease—a few percentage points—in teen employment compared to what would have happened without the policy changes \citep{callaway2021difference}.
+
+\section{Data}
+
+The analysis is based on county-level panel data for 2001--2007, constructed by the original authors in R by merging teen employment rates from the Quarterly Workforce Indicators (QWI) with demographic and economic variables from the 2000 County Data Book and Census sources. Specifically, county population and racial composition data are from the 2000 Census, educational attainment variables (such as the fraction of adults with a high school degree) come from the 1990 Census, and median income and poverty rate measures use data from 1997. The authors filtered out states and counties with missing data or pre-existing high minimum wages, and defined treatment groups by the year a state's minimum wage first exceeded the federal minimum. These data preparation and cleaning procedures are fully described in the replication materials and the published appendix for the original study \citep{callaway2021difference}.
+
+For this replication, the provided R data file was manually converted to CSV format to enable analysis in Python. No further data cleaning or merging were performed after this conversion.
+
+There are some limitations inherent to the prepared dataset. The sample excludes states that had minimum wages above the federal level prior to the study period, possibly limiting generalizability. Counties and states with incomplete labor or demographic data are excluded, which could introduce sample selection bias if excluded areas differ systematically. Measurement error may exist in QWI teen employment estimates at the county level due to reporting fluctuations. Differences in demographic and economic characteristics between treated and untreated counties remain, requiring empirical adjustments. Additionally, the data only covers 2001 to 2007, so longer-run effects or more recent policy changes are outside its scope. Despite these caveats, using the final cleaned dataset ensures close fidelity to the original analysis and results \citep{callaway2021difference}.
+
+\section{Extensions}
+
+A natural extension of this analysis would be to examine the effects of subsequent federal minimum wage increases, such as those enacted in 2007 and 2009. Extending the data to incorporate these later policy changes would allow for an exploration of whether similar impacts on teen employment persist over additional policy shocks.
+
+This extension is feasible given that the same public data sources—Quarterly Workforce Indicators, Census, and County Data Book—are available for these later years. Thus, the analytical framework and methods employed in the original study could be applied to extended data without requiring proprietary or restricted datasets.
+
+While alternative extensions, such as exploiting state-level minimum wage adjustments unrelated to federal policies or exploring spatial spillovers, could yield valuable insights, they present additional challenges related to identifying clean exogenous variation and data complexity. Therefore, extending the time frame to include multiple federal minimum wage increases represents a tractable and policy-relevant way to deepen understanding of minimum wage effects.
+
 
 \bibliographystyle{plainnat}
 \bibliography{references}

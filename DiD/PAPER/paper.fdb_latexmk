@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex paper"] 1760219619.46609 "paper.aux" "paper.bbl" "paper" 1760219620.83611 0
+["bibtex paper"] 1760220974.98861 "paper.aux" "paper.bbl" "paper" 1760220976.33374 0
   "./references.bib" 1760219544 509 ff726bc59d114cac5ddd05a17f0f9421 ""
   "C:/Users/melin/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "paper.aux" 1760219620 782 bf6d250897398fa01db18f0cfcb9f919 "pdflatex"
+  "paper.aux" 1760220975 1040 67825b78f8d55be167fe84b458272ee8 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1760219619.75131 "c:/Users/melin/Proton Drive/lrud1314/My files/HUNTER 2025/FALLL/726_SULLIVAN/DiD/PAPER/paper.tex" "paper.pdf" "paper" 1760219620.83659 0
-  "C:/Users/melin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760217168 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1760220975.28278 "c:/Users/melin/Proton Drive/lrud1314/My files/HUNTER 2025/FALLL/726_SULLIVAN/DiD/PAPER/paper.tex" "paper.pdf" "paper" 1760220976.33424 0
+  "C:/Users/melin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760220891 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/melin/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1760218895 14064 c96189bfca00d3ec66858fba3e89dad9 ""
   "C:/Users/melin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760216946 24225047 c861949bb08133aa167684ea56d34f59 ""
   "C:/Users/melin/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
@@ -54,10 +54,10 @@
   "C:/Users/melin/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "C:/Users/melin/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty" 1292249081 46712 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "C:/Users/melin/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
-  "c:/Users/melin/Proton Drive/lrud1314/My files/HUNTER 2025/FALLL/726_SULLIVAN/DiD/PAPER/paper.tex" 1760219615 7148 ae7cdb2b0c23746c3c77ca875a4eb778 ""
-  "paper.aux" 1760219620 782 bf6d250897398fa01db18f0cfcb9f919 "pdflatex"
-  "paper.bbl" 1760219619 774 1c7b459eff99f17f5b2b776da31dd3db "bibtex paper"
-  "paper.tex" 1760219615 7148 ae7cdb2b0c23746c3c77ca875a4eb778 ""
+  "c:/Users/melin/Proton Drive/lrud1314/My files/HUNTER 2025/FALLL/726_SULLIVAN/DiD/PAPER/paper.tex" 1760220973 10345 05034f3d44d83f5b4a94379cfea0a19a ""
+  "paper.aux" 1760220975 1040 67825b78f8d55be167fe84b458272ee8 "pdflatex"
+  "paper.bbl" 1760220975 774 1c7b459eff99f17f5b2b776da31dd3db "bibtex paper"
+  "paper.tex" 1760220973 10345 05034f3d44d83f5b4a94379cfea0a19a ""
   (generated)
   "paper.aux"
   "paper.log"
