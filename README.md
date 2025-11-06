@@ -9,14 +9,15 @@ Fall 2025 Hunter College
 **Prerequisites:**
 - Python 3.8+
 - Git
-- Jupyter Notebook
+- IDE with Jupyter support (VS Code, PyCharm, etc.)
 
 **Setup:**
 ```bash
 git clone https://github.com/lrud/726_Sullivan.git
 cd 726_Sullivan/DiD
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-jupyter notebook load_min_wage_data.ipynb
 ```
 
 **Data:** Already included at `data/min_wage_CS.csv`
