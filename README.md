@@ -14,10 +14,12 @@ Fall 2025 Hunter College
 **Setup:**
 ```bash
 git clone https://github.com/lrud/726_Sullivan.git
-cd 726_Sullivan/DiD
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+cd 726_Sullivan
+python3 -m venv minwage_env
+source minwage_env/bin/activate  # On Windows: minwage_env\Scripts\activate
+cd DiD
 pip install -r requirements.txt
+# Then open and run load_min_wage_data.ipynb in your IDE
 ```
 
 **Data:** Already included at `data/min_wage_CS.csv`
